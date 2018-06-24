@@ -1,0 +1,42 @@
+<div class="panel panel-default" ng-controller="accountController as accountCtrl">
+	    <div class="panel-heading">Accounts page</div>
+	    <div class="panel-body">
+   		{{accountCtrl.test}}
+   		<div ng-hide="accountCtrl.isHidden">
+        	<h3><span>Accounts table</span></h3>
+        	<table class="table">
+        		<tr>
+        			<th>{{'firstName' | uppercase}}</th>
+        			<th>{{'surname' | uppercase}}</th>
+        			<th>{{'accountNumber' | uppercase}}</th>
+        			<th>{{'dateofbirth' | uppercase}}</th>
+       				<th>Delete</th>
+        		</tr>
+        		<tr ng-repeat="account in accountCtrl.accounts">
+        			<td>{{account.firstName}}</td>
+        			<td>{{account.surname}}</td>
+        			<td>{{account.accountNumber}}</td>
+                    <td>{{account.dateofbirth}}</td>
+        			<td><button class="btn" ng-click="accountCtrl.delete(account)">Delete</button></td>
+        		</tr>
+
+                </table>
+
+					<div>
+                  	
+					<form name ="formData">
+						<input type = "text" placeholder="First Name" name ="firstName" ng-model ="accountCtrl.formData.first_Name">
+						<input type = "text" placeholder="Surname" name ="surname" ng-model ="accountCtrl.formData.surname">
+						<input type = "text" placeholder="Account Number accountNumber" name "year" ng-model ="accountCtrl.formData.accountNumber">
+                        <input type = "text" placeholder="Date of Birth" name ="dateofbirth" ng-model ="accountCtrl.formData.dateofbirth">
+                        
+
+					</form>
+				</div> 
+                 
+                <br><br> 
+        </div>
+        <button class="btn" ng-click="accountCtrl.add(account)">Add accounts</button>
+        <button class="btn" ng-click="accountCtrl.hideTable()">Hide accounts</button>
+	</div>
+</div>
