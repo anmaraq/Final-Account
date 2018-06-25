@@ -5,19 +5,19 @@
     function AccountDal (dal) {
 
         this.getAccounts = function () {
-            return dal.http.GET("rest/account/json");
+            return dal.http.GET("rest/account/view account/json");
         };
 
         this.saveAccount = function (accountToSave) {
-            return dal.http.POST("rest/account/json", accountToSave);
+            return dal.http.POST("rest/account/create account/json", accountToSave);
         };
 
         this.updateAccount = function (accountToUpdate) {
-            return dal.http.PUT("rest/account/json/", accountToUpdate);
+            return dal.http.PUT("rest/account/create account/json/", accountToUpdate);
         };
 
         this.deleteAccount = function (accountToDelete) {
-            return dal.http.DELETE("rest/account/json/",accountToDelete);
+            return dal.http.DELETE("rest/account/create account/json/",accountToDelete);
         };
     }
     

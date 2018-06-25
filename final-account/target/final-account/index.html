@@ -2,20 +2,18 @@
 <html lang="en" ng-app="accountApp">
 <head>
     <meta charset="UTF-8">
-    <title>My Account Application</title>
+    <title>My Final Account Application</title>
 </head>
 <body>
     <nav class="navbar navbar-default">
 	    <div class="container-fluid">
 	        <div class="navbar-header">
-	            <a class="navbar-brand" href="#">AccountApp</a>
+	            <a class="navbar-brand" href="#">FinalAccountApp</a>
 	        </div>
 	        <ul class="nav navbar-nav">
 	            <li><a ui-sref="dashboard">Dashboard</a></li>
-	            <li class ="dropdown"><a class ="dropdown-toggle" data-toggle="dropdown" href="#">Account <span class="caret"></span></a>
-	            <ul class="dropdown-menu">
-	            <li><a ui-sref="viewAccount">View Accounts</a></li>
-	            <li><a ui-sref="createAccount">Create Account</a></li>
+	            <li><a ui-sref="viewaccount">View Accounts</a></li>
+	            <li><a ui-sref="createaccount">Create Account</a></li>
 	        </ul>
 	    </div>
 	</nav>
@@ -34,10 +32,10 @@
     <script src="app/service/dal/dal.js"></script>
     <script src="app/service/dal/account.js"></script>
     
-    <script src="app/service/book.js"></script>
+    <script src="app/service/account.js"></script>
     
-    
-    <script src="app/feature/account/account-controller.js"></script>
+    <script src="app/feature/createaccount/create-controller.js"></script>
+    <script src="app/feature/viewaccount/view-controller.js"></script>
     <script src="app/feature/dashboard/dashboard-controller.js"></script>
     </div>
 </body>

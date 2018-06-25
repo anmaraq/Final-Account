@@ -8,9 +8,9 @@
         $stateProvider.state("dashboard", {
             url: "/dashboard",
             templateUrl: "app/feature/dashboard/dashboard.html"
-        }).state("account", {
-                url: "/account",
-                templateUrl: "app/feature/account/account.html"
+        }).state("view-account", {
+                url: "/view-account",
+                templateUrl: "app/feature/account/view account/view-account.html"
         })
     });
 }());

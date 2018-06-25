@@ -14,5 +14,5 @@
             
     };
 
-    angular.module('bookApp').controller('dashboardController', [DashboardController]);
+    angular.module('accountApp').controller('dashboardController', [DashboardController]);
 }());
